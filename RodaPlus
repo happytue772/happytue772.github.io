@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 교통현황</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 80%;
+            height: 80vh;
+            border: 2px solid #ddd;
+            margin: 20px auto;
+            display: block;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            color: #333;
+        }
+        section a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            color: white;
+            background-color: #0078d7;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        section a:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>실시간 교통현황</h1>
+        <nav>
+            <a href="#roadplus">RoadPlus</a>
+            <a href="#naver-traffic">네이버 지도</a>
+            <a href="#tips">교통정보 활용 팁</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- RoadPlus 교통현황 -->
+        <section id="roadplus">
+            <h2>RoadPlus 실시간 교통현황</h2>
+            <iframe src="https://www.roadplus.co.kr/main/main.do" title="RoadPlus 교통현황"></iframe>
+            <p>
+                <a href="https://www.roadplus.co.kr/main/main.do" target="_blank">RoadPlus 웹사이트 바로가기</a>
+            </p>
+        </section>
+
+        <!-- 네이버 지도 교통현황 -->
+        <section id="naver-traffic">
+            <h2>네이버 지도 실시간 교통현황</h2>
+            <iframe src="https://map.naver.com/v5/traffic" title="네이버 지도 교통현황"></iframe>
+            <p>
+                <a href="https://map.naver.com/v5/traffic" target="_blank">네이버 지도 바로가기</a>
+            </p>
+        </section>
+
+        <!-- 교통정보 활용 팁 -->
+        <section id="tips">
+            <h2>교통정보 활용 팁</h2>
+            <p>실시간 교통 정보를 활용하면 이동 시간을 절약할 수 있습니다. 아래 링크에서 자세한 정보를 확인해 보세요:</p>
+            <p>
+                <a href="https://www.ex.co.kr" target="_blank">한국도로공사 교통정보</a>
+                <a href="https://www.sktinsight.com" target="_blank">SK텔레콤 T맵 교통정보</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>실시간 교통현황 정보 제공: RoadPlus, 네이버 지도 등</p>
+        <p>문의사항: <a href="mailto:support@trafficinfo.com">support@trafficinfo.com</a></p>
+    </footer>
+</body>
+</html>
